@@ -1,9 +1,29 @@
+
+
+
 <ion-header>
   <ion-toolbar>
-    <ion-title>pagos</ion-title>
-  </ion-toolbar>
+    <ion-back-button defaultHref="home" text="Atras"></ion-back-button>
+    <ion-title>Pagos</ion-title>
+
+    
+  
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-segment value="tarjeta">
+        <ion-segment-button  value="tarjeta">
+          
+          
+        </ion-segment-button>
+        <ion-segment-button value="efectivo">
+          <ion-button>Otros</ion-button>
+        </ion-segment-button>
+        
+          
+      </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+<ion-router-outlet></ion-router-outlet>
 </ion-content>
