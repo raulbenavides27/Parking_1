@@ -1,42 +1,58 @@
-<ion-header></ion-header>
+<!--<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>
+      Parking
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-
-      <div class="ion-page" id="main-content">
-        <ion-header>
-          <ion-toolbar color="secondary">
-            <ion-buttons slot="start">
-              <ion-menu-button></ion-menu-button>
-            </ion-buttons>
+  <ion-header collapse="condense">
+    <ion-toolbar>
             <br>
-            <ion-searchbar color="#656565" class="search" mode="ios" placeholder="Buscar Direccion"></ion-searchbar>
+           
           </ion-toolbar>
         </ion-header>
-        <ion-content>
+        <div id="container">
           <ion-card>
             <ion-card-header>
               <ion-card-title>
               </ion-card-title>
             </ion-card-header>
             <ion-card-content>
-              <ion-img src="assets/icon/icono_4.png"></ion-img>
       
-              <ion-grid fixed>
-                <ion-row>
-                  <ion-col >
-                    <ion-button [routerLink]="['/estacionamiento']"   expand="block" shape="round" color="secundary"><ion-icon slot="start" name="pin"></ion-icon>Estacionamiento</ion-button>
-                  </ion-col>
-                  <ion-col>
-                    <ion-button  [routerLink]="['/login']" expand="block" shape="round" color="secundary"><ion-icon slot="start" name="person-outline"></ion-icon>usuario</ion-button>
-                  </ion-col>
-                </ion-row>
-    
-              </ion-grid>
             </ion-card-content>
           </ion-card>
          
-          
-        </ion-content>
+  
       </div>
-</ion-content>
+</ion-content>-->
 
+<ion-header>
+  <ion-toolbar color="secondary">
+    <br>
+    <ion-searchbar color="#656565" class="search" mode="ios" placeholder="Buscar Direccion"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-img src="assets/icon/icono_4.png"></ion-img>
+      
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col >
+            <ion-button [routerLink]="['/estacionamiento']"   expand="block" shape="round" color="secundary"><ion-icon slot="start" name="pin"></ion-icon>Estacionamiento</ion-button>
+          </ion-col>
+          <ion-col >
+            <ion-button [routerLink]="['/login']"   expand="block" shape="round" color="secundary"><ion-icon slot="start" name="pin"></ion-icon>Usuario</ion-button>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
 
