@@ -1,9 +1,6 @@
-<ion-header>
+<!--<ion-header>
   <ion-toolbar color="secondary">
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>Usuario</ion-title>
+    <ion-card-title>Iniciar Sesión</ion-card-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,22 +11,59 @@
     <ion-card-title>Iniciar Sesión</ion-card-title>
   </ion-card-header>
   <ion-card-content>
-    <ion-img src="assets/icon/icono_4.png" alt="img"></ion-img>
-    <form >
+    
+    <form [formGroup]="formularioLogin">
       <ion-item>
-    <ion-label Position="floating">Usuario</ion-label>
-    <ion-input ></ion-input>
+    <ion-label Position="floating">Nombre</ion-label>
+    <ion-input formControlName="nombre"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label Position="floating">Contraseña</ion-label>
-      <ion-input  type="password"></ion-input>
+      <ion-input formControlName="pass" type="password"></ion-input>
       </ion-item>
     </form>
-    <br>
-  <ion-button color="secondary" [routerLink]="['/home']">Ingresar</ion-button>
+    <br>  
+<ion-button (click)="ingresar()" color="secondary">Ingresar</ion-button>
  
   </ion-card-content>
 </ion-card>
+ 
+<ion-card> 
+  <ion-card>
+    <ion-img src="assets/icon/icono_4.png" alt="img"></ion-img>
+</ion-card>
+</ion-card> 
+
+</ion-content>
+-->
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Inicia sesion</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+      <ion-label Position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label Position="floating">Contraseña</ion-label>
+        <ion-input formControlName="pass" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <ion-button (click)="ingresar()" color="secondary">Ingresar</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 <ion-footer>
   <ion-toolbar color="secondary">
@@ -37,4 +71,6 @@
       <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
     </ion-buttons>
   </ion-toolbar>
-</ion-footer> 
+</ion-footer>
+
+

@@ -13,6 +13,11 @@ export class MenuPage implements OnInit {
       titulo: 'inicio',
       url: '/inicio/inicio',
       icono: 'home'
+    },
+    {
+      titulo: 'estacionamiento',
+      url: '/estacionamiento/estacionamiento',
+      icono: 'business'
     }
   ]
   constructor(public alertController: AlertController,
