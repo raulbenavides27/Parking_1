@@ -10,13 +10,28 @@ export class MenuPage implements OnInit {
   indiceSeleccionado: number = 0;
   paginas = [
     {
-      titulo: 'inicio',
-      url: '/inicio/inicio',
+      titulo: 'Inicio',
+      url: '/menu/inicio',
       icono: 'home'
     },
     {
       titulo: 'estacionamiento',
-      url: '/estacionamiento/estacionamiento',
+      url: '/menu/estacionamiento',
+      icono: 'business'
+    },
+    {
+      titulo: 'Auto',
+      url: '/menu/autos',
+      icono: 'business'
+    },
+    {
+      titulo: 'Ajustes',
+      url: '/menu/ajuste',
+      icono: 'business'
+    },
+    {
+      titulo: 'Ayuda',
+      url: '/menu/autos',
       icono: 'business'
     }
   ]
@@ -44,7 +59,7 @@ export class MenuPage implements OnInit {
           text: 'Aceptar',
           handler: () => {
             localStorage.removeItem('ingresado');
-            this.navCtrl.navigateRoot('login');
+            this.navCtrl.navigateRoot('home');
           }
         }
       ]
