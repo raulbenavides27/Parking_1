@@ -13,7 +13,6 @@ const routes: Routes = [
         loadChildren: () => import('../inicio/inicio.module').then( m => m.InicioPageModule)
       },
       {
-      
         path: 'ajuste',
         loadChildren: () => import('../ajuste/ajuste.module').then( m => m.AjustePageModule)
       },
@@ -28,6 +27,14 @@ const routes: Routes = [
       {
         path: 'autos',
         loadChildren: () => import('../autos/autos.module').then( m => m.AutosPageModule)
+      },
+      {
+        path: 'admin',
+        loadChildren: () => import('../admin/admin.module').then( m => m.AdminPageModule)
+      },
+      {
+        path: 'ayuda',
+        loadChildren: () => import('../ayuda/ayuda.module').then( m => m.AyudaPageModule)
       },
     ]
   }

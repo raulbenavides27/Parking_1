@@ -22,17 +22,22 @@ export class MenuPage implements OnInit {
     {
       titulo: 'Auto',
       url: '/menu/autos',
-      icono: 'business'
+      icono: 'car-sport'
+    },
+    {
+      titulo: 'Pagos',
+      url: '/menu/pagos',
+      icono: 'card'
     },
     {
       titulo: 'Ajustes',
       url: '/menu/ajuste',
-      icono: 'business'
+      icono: 'settings'
     },
     {
       titulo: 'Ayuda',
-      url: '/menu/autos',
-      icono: 'business'
+      url: '/menu/ayuda',
+      icono: 'information-circle'
     }
   ]
   constructor(public alertController: AlertController,
