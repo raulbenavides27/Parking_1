@@ -20,8 +20,8 @@ export class MenuPage implements OnInit {
       icono: 'business'
     },
     {
-      titulo: 'Auto',
-      url: '/menu/autos',
+      titulo: 'Autos',
+      url: '/menu/m_autos',
       icono: 'car-sport'
     },
     {

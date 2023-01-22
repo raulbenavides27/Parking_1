@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Autos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <br><br>
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+          <ion-fab-button color="secondary" [routerLink]="['/menu/autos']">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+
+        <ion-list [inset]="true" lines="none">
+
+          <ion-item slot="header" color="secondary" *ngFor="let item of items">
+            <ion-thumbnail slot="start">
+              <ion-img src="assets/img-autos/wevil.png"></ion-img>
+            </ion-thumbnail>
+            <ion-col>
+              <ion-label>Marca:<h2></h2> </ion-label>
+              <ion-label>Modelo: </ion-label>
+              <ion-label>Año: </ion-label>
+            </ion-col>
+
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+
+  </div>
+</ion-content>
