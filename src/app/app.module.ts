@@ -22,11 +22,7 @@ import { environment } from 'src/environments/environment';
 //import { firebaseConfig } from '../environment';
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-  //  AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,AngularFireStorageModule,AngularFireDatabaseModule,
-    AngularFirestoreModule,
-    BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
