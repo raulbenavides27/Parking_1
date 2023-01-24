@@ -20,26 +20,26 @@ export class EstacionamientoPage implements OnInit {
     {
       id: '2',
       nombre:'MALL HUECHURABA',
-      comuna:'ZUSUKI',
-      estado:'expreso',
-      disponibilidad: '2022',
+      comuna:'HUECHURABA',
+      estado:'activo',
+      disponibilidad: '80%',
       direccion: 'Av. americo vespucio 1737',
     },
     {
       id: '3',
       nombre:'SANTA ISABEL INDEPENDENCIA',
-      comuna:'ZUSUKI',
-      estado:'expreso',
-      disponibilidad: '2022',
-      direccion: '2022',
+      comuna:'INDEPENDENCIA',
+      estado:'En mantencion',
+      disponibilidad: '15%',
+      direccion: 'av INDEPENDENCIA 3160',
     },
     {
       id: '3',
       nombre:'SODIMAC QUILICURA',
-      comuna:'ZUSUKI',
-      estado:'expreso',
-      disponibilidad: '2022',
-      direccion: '2022',
+      comuna:'QUILICURA',
+      estado:'activo',
+      disponibilidad: '40%',
+      direccion: 'Av. Manuel Antonio Matta 581',
     }
     
          ]
