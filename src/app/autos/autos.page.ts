@@ -19,7 +19,8 @@ export class AutosPage implements OnInit {
     this.formularioAuto = this.fb.group({
       'marca': new FormControl("", Validators.required),
       'modelo': new FormControl("", Validators.required),
-      'year': new FormControl("", Validators.required)
+      'year': new FormControl("", Validators.required),
+      'name': new FormControl("", Validators.required)
     });
   }
 

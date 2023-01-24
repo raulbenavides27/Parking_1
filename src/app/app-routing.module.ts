@@ -31,6 +31,7 @@ const routes: Routes = [
     canActivate: [NoIngresadoGuard]
   },
 
+
 ];
 
 @NgModule({

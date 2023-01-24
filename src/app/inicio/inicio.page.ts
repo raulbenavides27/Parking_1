@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
@@ -6,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage{
  
-
-
-  constructor() { }
 
   }
 

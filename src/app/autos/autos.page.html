@@ -11,6 +11,10 @@
     <ion-card-content>
       <form [formGroup]="formularioAuto" (keyup.enter)="guardar()">
         <ion-item>
+          <ion-label Position="floating">Nombre</ion-label>
+          <ion-input formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
           <ion-label Position="floating">Marca</ion-label>
           <ion-input formControlName="marca"></ion-input>
         </ion-item>

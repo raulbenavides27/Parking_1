@@ -18,13 +18,15 @@
               </ion-card-title>
             </ion-card-header>
             <ion-card-content>
-          
+              <div #map id="map">
+                <!--API DE GOOGLE MAP-->
+              </div>
               <ion-img src="assets/icon/icono_4.png"></ion-img>
       
               <ion-grid fixed>
                 <ion-row>
                   <ion-col >
-                    <ion-button [routerLink]="['/estacionamiento']"   expand="block" shape="round" color="secundary"><ion-icon slot="start" name="pin"></ion-icon>Estacionamiento</ion-button>
+                    <ion-button [routerLink]="['/menu/detalle-parking']"   expand="block" shape="round" color="secundary"><ion-icon slot="start" name="pin"></ion-icon>Estacionamiento</ion-button>
                   </ion-col>
                 </ion-row>
     

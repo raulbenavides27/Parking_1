@@ -16,7 +16,7 @@ export class MenuPage implements OnInit {
     },
     {
       titulo: 'estacionamiento',
-      url: '/menu/estacionamiento',
+      url: '/menu/detalle-parking',
       icono: 'business'
     },
     {

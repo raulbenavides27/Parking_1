@@ -21,10 +21,6 @@ const routes: Routes = [
         loadChildren: () => import('../pagos/pagos.module').then( m => m.PagosPageModule)
       },
       {
-        path: 'estacionamiento',
-        loadChildren: () => import('../estacionamiento/estacionamiento.module').then( m => m.EstacionamientoPageModule)
-      },
-      {
         path: 'autos',
         loadChildren: () => import('../autos/autos.module').then( m => m.AutosPageModule)
       },
@@ -40,8 +36,14 @@ const routes: Routes = [
         path: 'ayuda',
         loadChildren: () => import('../ayuda/ayuda.module').then( m => m.AyudaPageModule)
       },
+      {
+        path: 'detalle-parking',
+        loadChildren: () => import('../detalle-parking/detalle-parking.module').then( m => m.DetalleParkingPageModule)
+      },
+    
     ]
   }
+
 ];
 
 @NgModule({

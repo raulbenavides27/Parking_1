@@ -1,0 +1,24 @@
+
+
+
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-segment value="estacionamiento" (ionChange)="segmentChanged($event)">
+        <ion-segment-button  value="estacionamiento">
+          <label >Detalle</label>
+        </ion-segment-button>
+        <ion-segment-button value="mapa">
+          <label >mapa</label>
+        </ion-segment-button>
+        
+          
+      </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-router-outlet></ion-router-outlet>
+</ion-content>

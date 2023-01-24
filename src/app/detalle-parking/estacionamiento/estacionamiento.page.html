@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-title horizontal="center">
+    </ion-card-title>
+    <ion-list [inset]="true" lines="none">
+      <ion-accordion-group [multiple]="true" [value]="['first', 'third']" lines="none">
+        <ion-accordion *ngFor="let p of parking">
+          <ion-item slot="header" color="tertiary">
+
+            <ion-icon name="location-outline"></ion-icon>
+
+            <ion-label>{{p.nombre}}</ion-label>
+          </ion-item>
+
+          <div class="ion-padding" slot="content">
+            <ion-item>
+              <ion-col>
+                <ion-label>Comuna:</ion-label>
+                <ion-label>Estado:</ion-label>
+                <ion-label>disponibilidad:</ion-label>
+                <ion-label>Direccion:</ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-label>{{p.comuna}}</ion-label>
+                <ion-label>{{p.estado}}</ion-label>
+                <ion-label>{{p.disponibilidad}}</ion-label>
+                <ion-label>{{p.direccion}}</ion-label>
+              </ion-col>
+            </ion-item>
+            <ion-button color="success" size="small"><label>Ir</label><ion-icon
+                name="location-outline"></ion-icon></ion-button>
+            <ion-button color="secondary" size="small"><label>Actualizar</label><ion-icon
+                name="reload-outline"></ion-icon></ion-button>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-list>
+  </ion-card>
+</ion-content>
