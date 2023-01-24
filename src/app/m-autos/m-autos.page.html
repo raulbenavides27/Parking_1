@@ -9,13 +9,13 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <ion-card>
+  <ion-card  >
     <ion-card-title horizontal="center">
     </ion-card-title>
     <ion-list [inset]="true" lines="none">
-      <ion-accordion-group [multiple]="true" [value]="['first', 'third']" lines="none">
+      <ion-accordion-group  [multiple]="true" [value]="['first', 'third']" lines="none">
         <ion-accordion *ngFor="let item of autos">
-          <ion-item slot="header" color="tertiary">
+          <ion-item slot="header"  color="secondary">
             <ion-thumbnail slot="start">
               <ion-img [src]="item.imageURL"></ion-img>
             </ion-thumbnail>
@@ -25,9 +25,14 @@
           <div class="ion-padding" slot="content">
             <ion-item>
               <ion-col>
-                <ion-label>Marca: {{item.marca}}</ion-label>
-                <ion-label>Modelo: {{item.modelo}}</ion-label>
-                <ion-label>Año: {{item.year}}</ion-label>
+                <ion-label>Marca:</ion-label>
+                <ion-label>Modelo:</ion-label>
+                <ion-label>Año:</ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-label>{{item.marca}}</ion-label>
+                <ion-label>{{item.modelo}}</ion-label>
+                <ion-label>{{item.year}}</ion-label>
               </ion-col>
               <ion-button color="warning" size="small"><ion-icon name="create-outline"></ion-icon>
               </ion-button>

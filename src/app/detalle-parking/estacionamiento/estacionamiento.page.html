@@ -5,7 +5,7 @@
     <ion-list [inset]="true" lines="none">
       <ion-accordion-group [multiple]="true" [value]="['first', 'third']" lines="none">
         <ion-accordion *ngFor="let p of parking">
-          <ion-item slot="header" color="tertiary">
+          <ion-item slot="header" color="tertiary"  color="secondary">
 
             <ion-icon name="location-outline"></ion-icon>
 
@@ -13,7 +13,7 @@
           </ion-item>
 
           <div class="ion-padding" slot="content">
-            <ion-item>
+            <ion-item  >
               <ion-col>
                 <ion-label>Comuna:</ion-label>
                 <ion-label>Estado:</ion-label>
