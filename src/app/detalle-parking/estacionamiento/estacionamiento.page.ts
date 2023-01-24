@@ -14,7 +14,7 @@ export class EstacionamientoPage implements OnInit {
       comuna:'huechuraba',
       estado:'activo',
       disponibilidad: '75%',
-      direccion: 'ir',
+      direccion: 'Calle Nueva 1660',
     
     },
     {
@@ -23,7 +23,7 @@ export class EstacionamientoPage implements OnInit {
       comuna:'ZUSUKI',
       estado:'expreso',
       disponibilidad: '2022',
-      direccion: '2022',
+      direccion: 'Av. americo vespucio 1737',
     },
     {
       id: '3',
